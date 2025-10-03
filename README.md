@@ -10,3 +10,8 @@ Como compilar e executar os exercícios:
         Execute as seguintes linhas no terminal:
         gcc .\exercicio2\exercicio2.c -o .\exercicio2\exercicio2.exe
         .\exercicio2\exercicio2.exe
+
+    Exercício 3: 
+        Execute as seguintes linhas no terminal:
+        gcc .\exercicio3\exercicio3.c -o .\exercicio3\exercicio3.exe
+        .\exercicio3\exercicio3.exe
