@@ -4,10 +4,10 @@
 
 // Declararação das funções
 void fill_array(int *array, int size);
-void show_array(const int array[], const int size, const int is_ordered);
-int max(int array[], int size);
-int min(int array[], int size);
-float avg(int array[], int size);
+void show_array(const int array[], int size, int is_ordered);
+int max(const int array[], int size);
+int min(const int array[], int size);
+float avg(const int array[], int size);
 void order(int *array, int size, int *is_ordered);
 
 // Implementação das funções
@@ -37,7 +37,7 @@ void show_array(const int array[], const int size, const int is_ordered){
 }
 
 // Função que retorna o maior elemento do array
-int max(int array[], int size){
+int max(const int array[], int size){
     int max = array[0];
     for (int i = 0; i < size; i++) {
         if (array[i] > max) {
@@ -48,7 +48,7 @@ int max(int array[], int size){
 }
 
 // Função que retorna o menor elemento do array
-int min(int array[], int size){
+int min(const int array[], int size){
     int min = array[0];
     for (int i = 0; i < size; i++) {
         if (array[i] < min) {
@@ -59,7 +59,7 @@ int min(int array[], int size){
 }
 
 // Função que retorna a média dos valores do array
-float avg(int array[], int size){
+float avg(const int array[], int size){
     int sum = 0;
     for (int i = 0; i < size; i++) {
         sum += array[i];

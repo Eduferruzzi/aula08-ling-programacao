@@ -8,11 +8,11 @@
 void show_menu();
 void get_option(int *option);
 void read_string(char *string, int max_length);
-int count_chars(char string[]);
+int count_chars(const char string[]);
 void invert_string(char *string);
 void to_uppercase(char *string);
 void to_lowercase(char *string);
-int count_words(char string[]);
+int count_words(const char string[]);
 
 // Implementação das funções
 // Função para mostrar o menu de opções
@@ -47,7 +47,7 @@ void read_string(char *string, int max_length){
 }
 
 // Função para contar os caracteres
-int count_chars(char string[]){
+int count_chars(const char string[]){
     int i = 0;
     while(string[i] != '\0') {
         i++;
@@ -87,7 +87,7 @@ void to_lowercase(char *string){
 }
 
 // Função para contar palavras
-int count_words(char string[]){
+int count_words(const char string[]){
     int words = 0;
     int inside_word = 0;
     while(*string != '\0') {
