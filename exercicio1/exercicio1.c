@@ -27,6 +27,8 @@ void show_menu(){
 void get_option(int *option){
     printf("Selecione uma opcao: ");
     scanf("%d", option);
+
+    while (getchar() != '\n');
 }
 
 // Função para pegar os números escolhidos pelo usuário
@@ -39,7 +41,6 @@ void get_numbers(float *n1, float *n2){
 
 // Função que realiza a soma
 float sum(float n1, float n2){
-    
     return n1 + n2;
 }
 
